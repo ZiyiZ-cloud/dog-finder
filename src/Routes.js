@@ -13,7 +13,7 @@ function Routes({dogs}) {
       <Route exact path="/dogs">
         <DogList dogs={dogs} />
       </Route>
-      <Route exact path="/dogs/:name">
+      <Route path="/dogs/:name">
         <FilterDogDetails dogs={dogs} />
       </Route>
       <Redirect to="/dogs" />
